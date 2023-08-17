@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vs Luxury</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <img src="img/logo.jpg">
+            </div>
+            <nav>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="About.html">About Us</a></li>  
+                  <li><a href="Dining.html">Dining</a></li>
+                  <li><a href="Reservation.html">Reservation</a></li>   
+                  <li><a href="Events.html">Events</a></li> 
+                  <li><a href="Gallary.html">Gallary</a></li>
+                  <li class="current"><a href="Contact Us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="contact">
+            <form action="page.php" method="get">
+                <div class="form-group">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" placeholder="Enter Your First Name"> 
+                </div>
+                <div class="form-group">
+                    <label for="othername">Other Name:</label>
+                    <input type="text" id="othername" placeholder="Enter Your Other Name"> 
+                </div>
+                <div class="form-group">
+                    <label for="first name">Last Name:</label>
+                    <input type="text" id="lastname" placeholder="Enter Your Last Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter Your Email...">
+                </div>
+                <div class="form-group">
+                    <label for="phonenumber">Phone Number:</label>
+                    <input type="number" id="phonenumber" placeholder="Enter Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comment:</label>
+                    <textarea name="comment" placeholder="Comment here"></textarea>
+                </div>
+                <div class="form-group-gender">
+                    <h3>Gender</h3>
+                    <label for="male">Male:</label>
+                    <input type="radio" id="male" value="male" name="gender" checked />
+                    <label for="female">Female:</label>
+                    <input type="radio" id="female" value="female"  name="gender" />
+                    <label for="other">Other:</label>
+                    <input type="radio" id="other" value="female" name="gender" />
+                   
+                      </div> 
+                      <div class="form-group">      
+                    <input type="submit"  class="btn" value="Submit">
+                    </div>
+            </form> 
+        </div>
+                <p>If you click the "Submit" button, the form-data will be sent to a page called "action_page.php".</p>
+      
+                <p>Notice that the value of the "First name" field will not be submitted, because the input element does not have a name attribute.</p>
+    </section>
+</body>
+</html>
